@@ -1,2 +1,2 @@
-# geoblockai
-Geomodelling and visualisation for mining and mineral processing operations
+# geoblock
+Geomodelling and interstellar flight simulation
