@@ -1,2 +1,2 @@
 # gexoblock
-Geomodelling and interstellar flight simulation
+The geological modelling and mining simulation program.
