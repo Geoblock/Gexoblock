@@ -1,2 +1,2 @@
-# gexoblock
-The geological modelling and mining simulation program.
+# Gexoblock
+Geological modelling and mining simulation program.
