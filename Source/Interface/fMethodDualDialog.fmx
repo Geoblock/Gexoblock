@@ -1,0 +1,253 @@
+inherited fmMethodDualDialog: TfmMethodDualDialog
+  Caption = 'MethodDualDialog'
+  ClientHeight = 555
+  ClientWidth = 1098
+  DesignerMasterStyle = 0
+  inherited PanelTop: TPanel
+    Size.Width = 1098.000000000000000000
+    inherited PanelInputA: TPanel
+      Align = Left
+      Size.Width = 519.000000000000000000
+      TabOrder = 1
+      inherited LabelInputA: TLabel
+        Size.Width = 519.000000000000000000
+        Text = 'Input A'
+      end
+      inherited ToolBarInputA: TToolBar
+        Size.Width = 509.000000000000000000
+      end
+      inherited PanelAttributes: TPanel
+        Size.Width = 236.000000000000000000
+        inherited LabelAttributesA: TLabel
+          Size.Width = 236.000000000000000000
+        end
+        inherited ListBoxAttributesA: TListBox
+          Size.Width = 236.000000000000000000
+          Viewport.Width = 232.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+      inherited PanelModels: TPanel
+        Size.Width = 273.000000000000000000
+        inherited LabelModelsA: TLabel
+          Size.Width = 273.000000000000000000
+        end
+        inherited ListBoxInputA: TListBox
+          Size.Width = 273.000000000000000000
+          Viewport.Width = 269.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+    end
+    object Panel1: TPanel
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 539.000000000000000000
+      Size.Height = 209.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object LabelInputB: TLabel
+        Align = Top
+        Size.Width = 539.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Input B'
+        TabOrder = 3
+      end
+      object ToolBar1: TToolBar
+        Margins.Left = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 17.000000000000000000
+        Size.Width = 529.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SpeedButton1: TSpeedButton
+          StaysPressed = True
+          Align = Left
+          AutoTranslate = False
+          GroupName = 'Input'
+          Images = ImageListInput
+          ImageIndex = 0
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton2: TSpeedButton
+          Tag = 1
+          StaysPressed = True
+          Align = Left
+          AutoTranslate = False
+          GroupName = 'Input'
+          Images = ImageListInput
+          ImageIndex = 1
+          Position.X = 40.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton3: TSpeedButton
+          Tag = 2
+          StaysPressed = True
+          Align = Left
+          AutoTranslate = False
+          GroupName = 'Input'
+          Images = ImageListInput
+          ImageIndex = 2
+          Position.X = 80.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton4: TSpeedButton
+          Tag = 3
+          Align = Left
+          Images = ImageListInput
+          ImageIndex = 3
+          Position.X = 120.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton5: TSpeedButton
+          Tag = 4
+          Align = Left
+          Images = ImageListInput
+          ImageIndex = 4
+          Position.X = 160.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton6: TSpeedButton
+          Tag = 5
+          Align = Left
+          Images = ImageListInput
+          ImageIndex = 5
+          Position.X = 200.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton7: TSpeedButton
+          Tag = 6
+          Align = Left
+          Images = ImageListInput
+          ImageIndex = 6
+          Position.X = 240.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton8: TSpeedButton
+          Tag = 7
+          Align = Left
+          Images = ImageListInput
+          ImageIndex = 7
+          Position.X = 280.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton9: TSpeedButton
+          Tag = 8
+          Align = Left
+          Images = ImageListInput
+          ImageIndex = 8
+          Position.X = 320.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object SpeedButton10: TSpeedButton
+          Tag = 9
+          Align = Left
+          Images = ImageListInput
+          ImageIndex = 9
+          Position.X = 360.000000000000000000
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Panel2: TPanel
+        Align = Client
+        Size.Width = 256.000000000000000000
+        Size.Height = 152.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object LabelAttributesB: TLabel
+          Align = Top
+          Size.Width = 256.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Attributes'
+          TabOrder = 1
+        end
+        object ListBoxAttributesB: TListBox
+          Align = Client
+          Size.Width = 256.000000000000000000
+          Size.Height = 135.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 252.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+      object Panel3: TPanel
+        Align = Left
+        Margins.Right = 10.000000000000000000
+        Position.Y = 57.000000000000000000
+        Size.Width = 273.000000000000000000
+        Size.Height = 152.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LabelModelsB: TLabel
+          Align = Top
+          Size.Width = 273.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Models'
+          TabOrder = 1
+        end
+        object ListBoxModelsB: TListBox
+          Align = Client
+          Size.Width = 273.000000000000000000
+          Size.Height = 135.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 269.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+    end
+  end
+  inherited PanelMiddle: TPanel
+    Size.Width = 1098.000000000000000000
+  end
+  inherited PanelBottom: TPanel
+    Size.Width = 1098.000000000000000000
+    Size.Height = 106.000000000000000000
+    inherited ToolBar2: TToolBar
+      Size.Width = 1098.000000000000000000
+      inherited LabelEmpty: TLabel
+        Size.Width = 699.000000000000000000
+      end
+      inherited EditOutput: TEdit
+        Size.Width = 239.000000000000000000
+      end
+    end
+    inherited LabelOutput: TLabel
+      Size.Width = 1088.000000000000000000
+    end
+  end
+end

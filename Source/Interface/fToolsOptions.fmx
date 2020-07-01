@@ -1,0 +1,109 @@
+inherited fmToolsOptions: TfmToolsOptions
+  Caption = 'Options'
+  ClientHeight = 369
+  ClientWidth = 494
+  Position = ScreenCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited PanelTop: TPanel
+    Size.Width = 494.000000000000000000
+  end
+  inherited PanelMiddle: TPanel
+    Size.Width = 494.000000000000000000
+    Size.Height = 272.000000000000000000
+    object TreeView: TTreeView
+      Align = Left
+      Size.Width = 184.000000000000000000
+      Size.Height = 272.000000000000000000
+      Size.PlatformDefault = False
+      Viewport.Width = 180.000000000000000000
+      Viewport.Height = 268.000000000000000000
+      object TreeViewItem1: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 0
+        Text = 'Preferences'
+        object TreeViewItem3: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = False
+          TabOrder = 0
+          Text = 'TreeViewItem3'
+        end
+      end
+      object TreeViewItem2: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 1
+        Text = 'Language'
+      end
+    end
+    object ListBox: TListBox
+      Position.X = 328.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 100.000000000000000000
+      Size.PlatformDefault = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBoxChange
+      Viewport.Width = 96.000000000000000000
+      Viewport.Height = 96.000000000000000000
+    end
+    object ButtonEn: TButton
+      Position.X = 240.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'En'
+    end
+    object ButtonRu: TButton
+      Position.X = 392.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 49.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Ru'
+    end
+  end
+  inherited PanelBottom: TPanel
+    Size.Width = 494.000000000000000000
+    Size.Height = 56.000000000000000000
+    inherited ButtonOK: TButton
+      Position.X = 152.000000000000000000
+    end
+    inherited ButtonCancel: TButton
+      Position.X = 272.000000000000000000
+    end
+    inherited ButtonHelp: TButton
+      Position.X = 392.000000000000000000
+    end
+  end
+  object Langs: TLang
+    Lang = 'ru'
+    Left = 248
+    Top = 137
+    ResourcesBin = {
+      4200000045007800700061006E0064000D000A004F004B000D000A0043006100
+      6E00630065006C000D000A00480065006C0070000D000A005000720065006600
+      6500720065006E006300650073000D000A004C0061006E006700750061006700
+      65000D000A0045006E000D000A00520075000D000A004F007000740069006F00
+      6E0073000D000A00010000000200000072007500790000004F004B003D001E04
+      1A040D000A00430061006E00630065006C003D001E0442043C0435043D043004
+      0D000A00480065006C0070003D001F043E043C043E0449044C040D000A004C00
+      61006E00670075006100670065003D002F0437044B043A040D000A0045006E00
+      3D0010043D0433040D000A00520075003D002004430441040D000A0045007800
+      700061006E0064003D002004300441043A0440044B0442044C040D000A005000
+      7200650066006500720065006E006300650073003D001F043004400430043C04
+      3504420440044B040D000A004F007000740069006F006E0073003D001E043F04
+      4604380438040D000A00}
+  end
+end

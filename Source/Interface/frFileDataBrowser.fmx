@@ -1,0 +1,37 @@
+object FrameDataBrowser: TFrameDataBrowser
+  Size.Width = 508.000000000000000000
+  Size.Height = 702.000000000000000000
+  Size.PlatformDefault = False
+  object TreeViewData: TTreeView
+    Align = Client
+    Size.Width = 508.000000000000000000
+    Size.Height = 702.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ParentShowHint = False
+    ShowHint = False
+    Viewport.Width = 504.000000000000000000
+    Viewport.Height = 698.000000000000000000
+    object TreeViewItem1: TTreeViewItem
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 0
+      Text = 'TreeViewItem1'
+      object TreeViewItem2: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 0
+        Text = 'TreeViewItem2'
+      end
+      object TreeViewItem3: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 1
+        Text = 'TreeViewItem3'
+      end
+    end
+  end
+end

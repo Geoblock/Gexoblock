@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{14BCCD25-F121-408F-AB25-BA7A81921C17}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Gexoblock.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Gexoblock">
+        <MSBuild Projects="Gexoblock.dproj"/>
+    </Target>
+    <Target Name="Gexoblock:Clean">
+        <MSBuild Projects="Gexoblock.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gexoblock:Make">
+        <MSBuild Projects="Gexoblock.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Gexoblock"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Gexoblock:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Gexoblock:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

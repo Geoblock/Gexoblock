@@ -1,0 +1,50 @@
+object FrameShowTable: TFrameShowTable
+  Size.Width = 638.000000000000000000
+  Size.Height = 452.000000000000000000
+  Size.PlatformDefault = False
+  object ToolBarTable: TToolBar
+    Size.Width = 638.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object BindNavigator: TBindNavigator
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+  end
+  object GridTable: TGrid
+    Align = Client
+    CanFocus = True
+    ClipChildren = True
+    Size.Width = 638.000000000000000000
+    Size.Height = 412.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 638.000000000000000000
+    Viewport.Height = 412.000000000000000000
+  end
+  object BindingsList: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 274
+    Top = 117
+    object BindExpressionmiFileNew1: TBindExpression
+      Category = 'Binding Expressions'
+      AutoActivate = False
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+  end
+  object BindSourceDB: TBindSourceDB
+    DataSet = dmBase.FDTable
+    ScopeMappings = <>
+    Left = 402
+    Top = 120
+  end
+end

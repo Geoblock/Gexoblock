@@ -1,0 +1,4 @@
+D:\Gexoblock\Help\IDH_MAIN.H
+D:\Gexoblock\Help\IDH_POPUP.H
+D:\Gexoblock\Help\PLUGINS.H
+

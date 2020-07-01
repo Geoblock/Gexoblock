@@ -1,0 +1,321 @@
+inherited fmMethodInterpolation: TfmMethodInterpolation
+  Caption = 'Interpolation'
+  ClientHeight = 496
+  ClientWidth = 780
+  Position = ScreenCenter
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  inherited PanelTop: TPanel
+    Size.Width = 780.000000000000000000
+    inherited PanelInputA: TPanel
+      Size.Width = 375.000000000000000000
+      inherited LabelInputA: TLabel
+        Size.Width = 375.000000000000000000
+        Text = 'Points'
+      end
+      inherited ToolBarInputA: TToolBar
+        Size.Width = 365.000000000000000000
+        inherited sbDholes: TSpeedButton
+          Visible = False
+        end
+        inherited sbPoints3D: TSpeedButton
+          Position.X = 40.000000000000000000
+        end
+        inherited sbPolygons: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbTINs: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbSolids: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbGrids2D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbGrids3D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbMeshes2D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbMeshes3D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+      end
+      inherited PanelAttributes: TPanel
+        Size.Width = 180.000000000000000000
+        inherited LabelAttributesA: TLabel
+          Size.Width = 180.000000000000000000
+        end
+        inherited ListBoxAttributesA: TListBox
+          Size.Width = 180.000000000000000000
+          Viewport.Width = 176.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+      inherited PanelModels: TPanel
+        Size.Width = 185.000000000000000000
+        inherited LabelModelsA: TLabel
+          Size.Width = 185.000000000000000000
+        end
+        inherited ListBoxInputA: TListBox
+          Size.Width = 185.000000000000000000
+          Viewport.Width = 181.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+    end
+    inherited Panel1: TPanel
+      Size.Width = 365.000000000000000000
+      inherited LabelInputB: TLabel
+        Size.Width = 365.000000000000000000
+        Text = 'Nodes'
+      end
+      inherited ToolBar1: TToolBar
+        Size.Width = 355.000000000000000000
+        inherited SpeedButton1: TSpeedButton
+          Visible = False
+        end
+        inherited SpeedButton2: TSpeedButton
+          Visible = False
+        end
+        inherited SpeedButton3: TSpeedButton
+          Visible = False
+        end
+        inherited SpeedButton4: TSpeedButton
+          Visible = False
+        end
+        inherited SpeedButton5: TSpeedButton
+          Visible = False
+        end
+        inherited SpeedButton6: TSpeedButton
+          Visible = False
+        end
+        inherited SpeedButton8: TSpeedButton
+          Position.X = 40.000000000000000000
+        end
+        inherited SpeedButton9: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited SpeedButton10: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+      end
+      inherited Panel2: TPanel
+        Size.Width = 178.000000000000000000
+        inherited LabelAttributesB: TLabel
+          Size.Width = 178.000000000000000000
+        end
+        inherited ListBoxAttributesB: TListBox
+          Size.Width = 178.000000000000000000
+          Viewport.Width = 174.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+      inherited Panel3: TPanel
+        Size.Width = 177.000000000000000000
+        inherited LabelModelsB: TLabel
+          Size.Width = 177.000000000000000000
+        end
+        inherited ListBoxModelsB: TListBox
+          Size.Width = 177.000000000000000000
+          Viewport.Width = 173.000000000000000000
+          Viewport.Height = 131.000000000000000000
+        end
+      end
+    end
+  end
+  inherited PanelMiddle: TPanel
+    Size.Width = 780.000000000000000000
+    Size.Height = 224.000000000000000000
+    object Panel4: TPanel
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 271.000000000000000000
+      Size.Height = 214.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object LabelMethod: TLabel
+        Align = Top
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Method'
+        TabOrder = 1
+      end
+      object rbIDW: TRadioButton
+        Align = Top
+        GroupName = 'Method'
+        IsChecked = True
+        Position.Y = 27.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Inverse Distances'
+      end
+      object rbCPI: TRadioButton
+        Align = Top
+        GroupName = 'Method'
+        Position.Y = 46.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Closest Point'
+      end
+      object rbNNI: TRadioButton
+        Align = Top
+        GroupName = 'Method'
+        Position.Y = 122.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Natural Neighbors'
+      end
+      object rbKRI: TRadioButton
+        Align = Top
+        GroupName = 'Method'
+        Position.Y = 103.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Kriging'
+      end
+      object rbPRI: TRadioButton
+        Align = Top
+        GroupName = 'Method'
+        Position.Y = 84.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Polynomial Regression'
+      end
+      object rbLTIN: TRadioButton
+        Align = Top
+        GroupName = 'Method'
+        Position.Y = 65.000000000000000000
+        Size.Width = 271.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Linear By TIN'
+      end
+      object ButtonOptions: TButton
+        Position.X = 72.000000000000000000
+        Position.Y = 176.000000000000000000
+        TabOrder = 8
+        Text = 'Options...'
+      end
+      object CheckBoxVariance: TCheckBox
+        Position.X = 160.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 96.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Text = 'Variance'
+      end
+      object EditExtraValue: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 352.000000000000000000
+        Position.Y = 48.000000000000000000
+      end
+    end
+    object CheckBoxOpenCL: TCheckBox
+      AutoTranslate = False
+      Position.X = 360.000000000000000000
+      Position.Y = 96.000000000000000000
+      TabOrder = 1
+      Text = 'OpenCL'
+    end
+    object lbExtraValue: TLabel
+      Position.X = 360.000000000000000000
+      Position.Y = 40.000000000000000000
+      Text = 'Extra Value'
+      TabOrder = 2
+    end
+  end
+  inherited PanelBottom: TPanel
+    Size.Width = 780.000000000000000000
+    Size.Height = 63.000000000000000000
+    inherited ToolBar2: TToolBar
+      Size.Width = 780.000000000000000000
+      inherited LabelEmpty: TLabel
+        Size.Width = 315.000000000000000000
+      end
+      inherited EditOutput: TEdit
+        Size.Width = 305.000000000000000000
+      end
+    end
+    inherited LabelOutput: TLabel
+      Size.Width = 770.000000000000000000
+    end
+  end
+  object Langs: TLang [3]
+    Lang = 'ru'
+    Left = 709
+    Top = 250
+    ResourcesBin = {
+      CE0000004F004B000D000A00430061006E00630065006C000D000A0048006500
+      6C0070000D000A0041007400740072006900620075007400650073000D000A00
+      4D006F00640065006C0073000D000A004F00750074007000750074000D000A00
+      50006F0069006E00740073000D000A004E006F006400650073000D000A004D00
+      6500740068006F0064000D000A0049006E007600650072007300650020004400
+      69007300740061006E006300650073000D000A0043006C006F00730065007300
+      7400200050006F0069006E0074000D000A004E00610074007500720061006C00
+      20004E00650069006700680062006F00720073000D000A004B00720069006700
+      69006E0067000D000A0050006F006C0079006E006F006D00690061006C002000
+      520065006700720065007300730069006F006E000D000A004C0069006E006500
+      610072002000420079002000540049004E000D000A004F007000740069006F00
+      6E0073002E002E002E000D000A00560061007200690061006E00630065000D00
+      0A0049006E0074006500720070006F006C006100740069006F006E000D000A00
+      010000000200000072007500AF0100004F004B003D001E041A040D000A004300
+      61006E00630065006C003D001E0442043C0435043D0430040D000A0048006500
+      6C0070003D001F043E043C043E0449044C040D000A0042006C006F0063006B00
+      20006D006F00640065006C006C0069006E0067003D0011043B043E0447043D04
+      3E04350420000D000A0041007400740072006900620075007400650073003D00
+      10044204400438043104430442044B040D000A004D006F00640065006C007300
+      3D001C043E04340435043B0438040D000A004F00750074007000750074003D00
+      12044B0432043E0434040D000A0050006F0069006E00740073003D0022043E04
+      47043A0438040D000A004E006F006400650073003D00230437043B044B040D00
+      0A004D006500740068006F0064003D001C04350442043E0434040D000A004900
+      6E00760065007200730065002000440069007300740061006E00630065007300
+      3D001E0431044004300442043D044B0435042000400430044104410442043E04
+      4F043D0438044F040D000A0043006C006F007300650073007400200050006F00
+      69006E0074003D0011043B043804360430043904480430044F04200042043E04
+      47043A0430040D000A004E00610074007500720061006C0020004E0065006900
+      6700680062006F00720073003D00150441044204350441044204320435043D04
+      3D044B043504200041043E0441043504340438040D000A004B00720069006700
+      69006E0067003D001A0440043804330438043D0433040D000A0050006F006C00
+      79006E006F006D00690061006C00200052006500670072006500730073006900
+      6F006E003D001F043E043B0438043D043E043C04380430043B044C043D043004
+      4F042000400435043304400435044104410438044F040D000A004C0069006E00
+      6500610072002000420079002000540049004E003D001B0438043D0435043904
+      3D0430044F04200038043D044204350440043F043E043B044F04460438044F04
+      0D000A004F007000740069006F006E0073002E002E002E003D001E043F044604
+      380438042E002E002E000D000A00560061007200690061006E00630065003D00
+      1404380441043F0435044004410438044F040D000A0049006E00740065007200
+      70006F006C006100740069006F006E003D0018043D044204350440043F043E04
+      3B044F04460438044F040D000A00}
+  end
+end

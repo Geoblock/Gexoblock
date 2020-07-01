@@ -1,0 +1,182 @@
+inherited fmMethodGridGeneration: TfmMethodGridGeneration
+  Caption = 'Grid Generation'
+  ClientWidth = 568
+  Position = ScreenCenter
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited PanelTop: TPanel
+    Size.Width = 568.000000000000000000
+    Size.Height = 177.000000000000000000
+    inherited PanelInputA: TPanel
+      Size.Width = 548.000000000000000000
+      Size.Height = 177.000000000000000000
+      inherited LabelInputA: TLabel
+        Size.Width = 548.000000000000000000
+      end
+      inherited ToolBarInputA: TToolBar
+        Size.Width = 538.000000000000000000
+        inherited sbDholes: TSpeedButton
+          Visible = False
+        end
+        inherited sbPoints3D: TSpeedButton
+          Position.X = 40.000000000000000000
+        end
+        inherited sbPolygons: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbTINs: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbSolids: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbGrids2D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbGrids3D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbMeshes2D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+        inherited sbMeshes3D: TSpeedButton
+          Position.X = 80.000000000000000000
+          Visible = False
+        end
+      end
+      inherited PanelAttributes: TPanel
+        Size.Width = 281.000000000000000000
+        Size.Height = 120.000000000000000000
+        inherited LabelAttributesA: TLabel
+          Size.Width = 281.000000000000000000
+          Text = #1052#1072#1090#1077#1088#1080#1072#1083
+        end
+        inherited ListBoxAttributesA: TListBox
+          Size.Width = 281.000000000000000000
+          Size.Height = 103.000000000000000000
+          Viewport.Width = 277.000000000000000000
+          Viewport.Height = 99.000000000000000000
+        end
+      end
+      inherited PanelModels: TPanel
+        Size.Width = 257.000000000000000000
+        Size.Height = 120.000000000000000000
+        inherited LabelModelsA: TLabel
+          Size.Width = 257.000000000000000000
+          Text = 'Points'
+        end
+        inherited ListBoxInputA: TListBox
+          Size.Width = 257.000000000000000000
+          Size.Height = 103.000000000000000000
+          Viewport.Width = 253.000000000000000000
+          Viewport.Height = 99.000000000000000000
+        end
+      end
+    end
+  end
+  inherited PanelMiddle: TPanel
+    Position.Y = 177.000000000000000000
+    Size.Width = 568.000000000000000000
+    Size.Height = 257.000000000000000000
+    object gbModelSize: TGroupBox
+      Align = Client
+      Size.Width = 568.000000000000000000
+      Size.Height = 257.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Model Size'
+      TabOrder = 0
+      object Image1: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 24.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Image2: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 312.000000000000000000
+        Position.Y = 160.000000000000000000
+      end
+      object Image3: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Position.X = 40.000000000000000000
+        Position.Y = 168.000000000000000000
+      end
+    end
+  end
+  inherited PanelBottom: TPanel
+    Size.Width = 568.000000000000000000
+    Size.Height = 130.000000000000000000
+    inherited ButtonOK: TButton
+      Position.X = 280.000000000000000000
+    end
+    inherited ButtonCancel: TButton
+      Position.X = 376.000000000000000000
+    end
+    inherited ButtonHelp: TButton
+      Position.X = 472.000000000000000000
+    end
+    inherited ToolBar2: TToolBar
+      Size.Width = 568.000000000000000000
+      inherited LabelEmpty: TLabel
+        Size.Width = 195.000000000000000000
+      end
+      inherited EditOutput: TEdit
+        Size.Width = 213.000000000000000000
+      end
+    end
+    inherited LabelOutput: TLabel
+      Size.Width = 558.000000000000000000
+    end
+  end
+  object Langs: TLang [3]
+    Lang = 'ru'
+    Left = 416
+    Top = 225
+    ResourcesBin = {
+      920000004F004B000D000A00430061006E00630065006C000D000A0048006500
+      6C0070000D000A0041007400740072006900620075007400650073000D000A00
+      49006E007000750074000D000A004F00750074007000750074000D000A005000
+      6F0069006E00740073000D000A004D006F00640065006C002000530069007A00
+      65000D000A004F0072006900670069006E000D000A0045006E00640069006E00
+      67000D000A004C0065006E006700740068000D000A004E0075006D0062006500
+      720020006F006600200042006C006F0063006B0073000D000A0042006C006F00
+      63006B002000530069007A0065000D000A004D00610074006500720069006100
+      6C000D000A0047007200690064002000470065006E0065007200610074006900
+      6F006E000D000A00010000000200000072007500130100004F004B003D001E04
+      1A040D000A00430061006E00630065006C003D001E0442043C0435043D043004
+      0D000A00480065006C0070003D0021043F044004300432043A0430040D000A00
+      41007400740072006900620075007400650073003D0010044204400438043104
+      430442044B040D000A0049006E007000750074003D00120432043E0434040D00
+      0A004F00750074007000750074003D0012044B0432043E0434040D000A005000
+      6F0069006E00740073003D0022043E0447043A0438040D000A004D006F006400
+      65006C002000530069007A0065003D002004300437043C043504400420003C04
+      3E04340435043B0438040D000A004F0072006900670069006E003D001D043004
+      470430043B043E040D000A0045006E00640069006E0067003D001A043E043D04
+      350446040D000A004C0065006E006700740068003D0014043B0438043D043004
+      0D000A004E0075006D0062006500720020006F006600200042006C006F006300
+      6B0073003D002704380441043B043E04200031043B043E043A043E0432040D00
+      0A0042006C006F0063006B002000530069007A0065003D002004300437043C04
+      35044004200031043B043E043A0430040D000A004D0061007400650072006900
+      61006C003D001C043004420435044004380430043B040D000A00470072006900
+      64002000470065006E00650072006100740069006F006E003D0021043E043704
+      340430043D04380435042000400435044804350442043A0438040D000A00}
+  end
+  inherited ImageListOutput: TImageList
+    Left = 184
+    Top = 97
+  end
+end

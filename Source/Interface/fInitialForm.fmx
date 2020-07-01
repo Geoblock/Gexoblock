@@ -1,0 +1,11 @@
+object fmInitialForm: TfmInitialForm
+  Left = 0
+  Top = 0
+  Caption = 'InitialForm'
+  ClientHeight = 303
+  ClientWidth = 512
+  FormFactor.Width = 1024
+  FormFactor.Height = 768
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+end

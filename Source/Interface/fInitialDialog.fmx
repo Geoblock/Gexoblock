@@ -1,0 +1,56 @@
+inherited fmInitialDialog: TfmInitialDialog
+  BorderIcons = [biSystemMenu]
+  BorderStyle = ToolWindow
+  Caption = 'InitialDialog'
+  ClientHeight = 456
+  ClientWidth = 587
+  Position = DesktopCenter
+  DesignerMasterStyle = 0
+  object PanelTop: TPanel
+    Align = Top
+    Size.Width = 587.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object PanelMiddle: TPanel
+    Align = Top
+    Position.Y = 41.000000000000000000
+    Size.Width = 587.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object PanelBottom: TPanel
+    Align = Client
+    Size.Width = 587.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    object ButtonOK: TButton
+      ModalResult = 1
+      Position.X = 240.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'OK'
+    end
+    object ButtonCancel: TButton
+      ModalResult = 2
+      Position.X = 360.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cancel'
+    end
+    object ButtonHelp: TButton
+      ModalResult = 9
+      Position.X = 480.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Help'
+      OnClick = ButtonHelpClick
+    end
+  end
+end

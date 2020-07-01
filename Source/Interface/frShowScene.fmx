@@ -1,0 +1,219 @@
+object FrameShowScene: TFrameShowScene
+  Align = Client
+  Size.Width = 910.000000000000000000
+  Size.Height = 623.000000000000000000
+  Size.PlatformDefault = False
+  OnMouseWheel = FrameMouseWheel
+  object ColorMaterialSource: TColorMaterialSource
+    Color = claWhite
+    Left = 559
+    Top = 35
+  end
+  object LightMaterialSource: TLightMaterialSource
+    Diffuse = claWhite
+    Ambient = xFF202020
+    Emissive = claNull
+    Specular = claNull
+    Shininess = 30
+    Left = 431
+    Top = 33
+  end
+  object TextureMaterialSource: TTextureMaterialSource
+    Left = 695
+    Top = 38
+  end
+  object Viewport3D: TViewport3D
+    Align = Client
+    Camera = Camera
+    Color = claDimgray
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 890.000000000000000000
+    Size.Height = 565.000000000000000000
+    Size.PlatformDefault = False
+    UsingDesignCamera = False
+    OnMouseDown = Viewport3DMouseDown
+    OnMouseMove = Viewport3DMouseMove
+    OnMouseUp = Viewport3DMouseUp
+    OnPaint = Viewport3DPaint
+    object DummyY: TDummy
+      RotationAngle.Y = 330.000000000000000000
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      Quanternion = '(0,0.258819103240967,0,-0.965925812721252)'
+      object DummyX: TDummy
+        RotationAngle.X = 330.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = '(0.258819133043289,0,0,-0.965925812721252)'
+        object Camera: TCamera
+          AngleOfView = 45.000000000000000000
+          Target = Grid3D
+          Position.Z = -5.000000000000000000
+          RotationAngle.Y = 1.284606933593750000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+          Quanternion = '(0,-0.0112099563702941,0,-0.999937117099762)'
+        end
+        object Light1: TLight
+          Color = claWhite
+          LightType = Directional
+          SpotCutOff = 180.000000000000000000
+          Position.X = -0.044065535068511960
+          Position.Y = 0.110847204923629800
+          Position.Z = 0.093374818563461300
+          RotationAngle.X = 315.000000000000000000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+          Quanternion = '(0.382683485746384,0,0,-0.923879504203796)'
+        end
+      end
+    end
+    object Grid3D: TGrid3D
+      Marks = 4.000000000000000000
+      Frequency = 1.000000000000000000
+      LineColor = x50505050
+      Position.X = 2.910033702850342000
+      Position.Y = 0.290750503540039100
+      RotationAngle.X = 270.000000000000000000
+      Width = 100.000000000000000000
+      Height = 100.000000000000000000
+      Depth = 0.001000000047497451
+      HitTest = False
+      Quanternion = '(0.70710676908493,0,0,-0.70710676908493)'
+      object Light2: TLight
+        Color = claWhite
+        LightType = Directional
+        SpotCutOff = 180.000000000000000000
+        Position.X = 3.172240257263184000
+        Position.Y = -5.000000000000000000
+        Position.Z = -3.201675415039063000
+        RotationAngle.X = 338.012023925781300000
+        RotationAngle.Y = 84.703414916992190000
+        RotationAngle.Z = 325.448791503906300000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        Quanternion = 
+          '(0.498331278562546,0.219385400414467,-0.281173259019852,-0.79023' +
+          '802280426)'
+      end
+    end
+  end
+  object ToolBarScene: TToolBar
+    Align = Bottom
+    Position.Y = 585.000000000000000000
+    Size.Width = 910.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object sbSelect: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 108
+      Size.Width = 41.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      ParentShowHint = False
+      ShowHint = True
+      StyleLookup = 'rewindtoolbuttonbordered'
+      Text = 'sbSelect'
+    end
+    object sbCenter: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 95
+      Position.X = 41.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      ParentShowHint = False
+      ShowHint = True
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'sbCenter'
+    end
+    object SpeedButton2: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 94
+      Position.X = 81.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'SpeedButton2'
+    end
+    object SpeedButton3: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 86
+      Position.X = 121.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'SpeedButton3'
+    end
+    object SpeedButton4: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 87
+      Position.X = 161.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'SpeedButton4'
+    end
+    object SpeedButton5: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 88
+      Position.X = 201.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'SpeedButton5'
+    end
+    object SpeedButton6: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 89
+      Position.X = 241.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'SpeedButton6'
+    end
+    object SpeedButton7: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 90
+      Position.X = 281.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'SpeedButton7'
+    end
+    object SpeedButton8: TSpeedButton
+      Align = Left
+      Images = dmImages.ilInterface
+      ImageIndex = 91
+      Position.X = 321.000000000000000000
+      Size.Width = 40.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'rewindtoolbutton'
+      Text = 'SpeedButton8'
+    end
+  end
+end
